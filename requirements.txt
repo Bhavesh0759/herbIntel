@@ -6,3 +6,4 @@ asyncpg
 requests
 supabase
 cohere
+python-dotenv
