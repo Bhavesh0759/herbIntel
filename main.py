@@ -14,6 +14,10 @@ co = cohere.Client(os.getenv("COHERE_API_KEY"))
 
 app = FastAPI()
 
+@app.get("/")
+def read_root():
+    return {"message": "HerbIntel API is live 🚀"}
+
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
